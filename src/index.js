@@ -5,14 +5,20 @@ import './index.css';
 class Square extends React.Component {
   render() {
     return (
+<<<<<<< HEAD
       <button className="square" onClick={() => this.props.onClick()}>
         {this.props.value}
+=======
+      <button className="square">
+        {/* TODO */}
+>>>>>>> 639e15a49c8882173c5eb8dc7d2af39ff3005477
       </button>
     );
   }
 }
 
 class Board extends React.Component {
+<<<<<<< HEAD
   constructor(props) {
     super(props);
     this.state = {
@@ -33,6 +39,10 @@ class Board extends React.Component {
         onClick={() => this.handleClick(i)}
         />
     );
+=======
+  renderSquare(i) {
+    return <Square />;
+>>>>>>> 639e15a49c8882173c5eb8dc7d2af39ff3005477
   }
 
   render() {
